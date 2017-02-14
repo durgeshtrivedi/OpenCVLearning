@@ -1,0 +1,1017 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BA1E53595300503191 /* AppDelegate.swift */; };
+		9D1FD4BD1E53595300503191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BC1E53595300503191 /* ViewController.swift */; };
+		9D1FD4C01E53595300503191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BE1E53595300503191 /* Main.storyboard */; };
+		9D1FD4C21E53595300503191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4C11E53595300503191 /* Assets.xcassets */; };
+		9D1FD4C51E53595300503191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */; };
+		9D1FD4CE1E53599C00503191 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD4CD1E53599C00503191 /* opencv2.framework */; };
+		9D1FD4DA1E535A3300503191 /* donald_trump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D21E535A3300503191 /* donald_trump.jpg */; };
+		9D1FD4DB1E535A3300503191 /* donald_trump.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */; };
+		9D1FD4DC1E535A3300503191 /* faceSwap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D41E535A3300503191 /* faceSwap.cpp */; };
+		9D1FD4DD1E535A3300503191 /* faceSwap.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D51E535A3300503191 /* faceSwap.py */; };
+		9D1FD4DE1E535A3300503191 /* hillary_clinton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */; };
+		9D1FD4DF1E535A3300503191 /* hillary_clinton.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */; };
+		9D1FD4E01E535A3300503191 /* ted_cruz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D81E535A3300503191 /* ted_cruz.jpg */; };
+		9D1FD4E11E535A3300503191 /* ted_cruz.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */; };
+		9D1FD50B1E535C3700503191 /* blob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4E31E535C3700503191 /* blob.cpp */; };
+		9D1FD50C1E535C3700503191 /* blob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4E41E535C3700503191 /* blob.jpg */; };
+		9D1FD50D1E535C3700503191 /* blob.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4E51E535C3700503191 /* blob.py */; };
+		9D1FD50E1E535C3700503191 /* colormap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4E71E535C3700503191 /* colormap.cpp */; };
+		9D1FD50F1E535C3700503191 /* colormap.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4E81E535C3700503191 /* colormap.py */; };
+		9D1FD5101E535C3700503191 /* custom_colormap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4E91E535C3700503191 /* custom_colormap.cpp */; };
+		9D1FD5111E535C3700503191 /* custom_colormap.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4EA1E535C3700503191 /* custom_colormap.py */; };
+		9D1FD5121E535C3700503191 /* pluto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4EB1E535C3700503191 /* pluto.jpg */; };
+		9D1FD5131E535C3700503191 /* delaunay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4ED1E535C3700503191 /* delaunay.cpp */; };
+		9D1FD5141E535C3700503191 /* delaunay.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4EE1E535C3700503191 /* delaunay.py */; };
+		9D1FD5151E535C3700503191 /* obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4EF1E535C3700503191 /* obama.jpg */; };
+		9D1FD5161E535C3700503191 /* obama.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F01E535C3700503191 /* obama.txt */; };
+		9D1FD5171E535C3700503191 /* faceAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F21E535C3700503191 /* faceAverage.cpp */; };
+		9D1FD5181E535C3700503191 /* faceAverage.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F31E535C3700503191 /* faceAverage.py */; };
+		9D1FD5191E535C3700503191 /* barak-obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F51E535C3700503191 /* barak-obama.jpg */; };
+		9D1FD51A1E535C3700503191 /* barak-obama.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F61E535C3700503191 /* barak-obama.jpg.txt */; };
+		9D1FD51B1E535C3700503191 /* bill-clinton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F71E535C3700503191 /* bill-clinton.jpg */; };
+		9D1FD51C1E535C3700503191 /* bill-clinton.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F81E535C3700503191 /* bill-clinton.jpg.txt */; };
+		9D1FD51D1E535C3700503191 /* george-h-bush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4F91E535C3700503191 /* george-h-bush.jpg */; };
+		9D1FD51E1E535C3700503191 /* george-h-bush.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4FA1E535C3700503191 /* george-h-bush.jpg.txt */; };
+		9D1FD51F1E535C3700503191 /* george-w-bush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4FB1E535C3700503191 /* george-w-bush.jpg */; };
+		9D1FD5201E535C3700503191 /* george-w-bush.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4FC1E535C3700503191 /* george-w-bush.jpg.txt */; };
+		9D1FD5211E535C3700503191 /* jimmy-carter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4FD1E535C3700503191 /* jimmy-carter.jpg */; };
+		9D1FD5221E535C3700503191 /* jimmy-carter.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4FE1E535C3700503191 /* jimmy-carter.jpg.txt */; };
+		9D1FD5231E535C3700503191 /* ronald-regan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4FF1E535C3700503191 /* ronald-regan.jpg */; };
+		9D1FD5241E535C3700503191 /* ronald-regan.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5001E535C3700503191 /* ronald-regan.jpg.txt */; };
+		9D1FD5251E535C3700503191 /* donald_trump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5021E535C3700503191 /* donald_trump.jpg */; };
+		9D1FD5261E535C3700503191 /* donald_trump.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5031E535C3700503191 /* donald_trump.jpg.txt */; };
+		9D1FD5271E535C3700503191 /* faceMorph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5041E535C3700503191 /* faceMorph.cpp */; };
+		9D1FD5281E535C3700503191 /* faceMorph.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5051E535C3700503191 /* faceMorph.py */; };
+		9D1FD5291E535C3700503191 /* hillary_clinton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5061E535C3700503191 /* hillary_clinton.jpg */; };
+		9D1FD52A1E535C3700503191 /* hillary_clinton.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5071E535C3700503191 /* hillary_clinton.jpg.txt */; };
+		9D1FD52B1E535C3700503191 /* ted_cruz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5081E535C3700503191 /* ted_cruz.jpg */; };
+		9D1FD52C1E535C3700503191 /* ted_cruz.jpg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5091E535C3700503191 /* ted_cruz.jpg.txt */; };
+		9D1FD52D1E535C3700503191 /* tri.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD50A1E535C3700503191 /* tri.txt */; };
+		9D1FD5811E535D5700503191 /* features_ALL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5301E535D5700503191 /* features_ALL.txt */; };
+		9D1FD5821E535D5700503191 /* landmarks.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5311E535D5700503191 /* landmarks.txt */; };
+		9D1FD5831E535D5700503191 /* ratings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5321E535D5700503191 /* ratings.txt */; };
+		9D1FD5841E535D5700503191 /* cross_valid_predictions_gpr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5341E535D5700503191 /* cross_valid_predictions_gpr.txt */; };
+		9D1FD5851E535D5700503191 /* cross_valid_predictions_knn.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5351E535D5700503191 /* cross_valid_predictions_knn.txt */; };
+		9D1FD5861E535D5700503191 /* cross_valid_predictions_linear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5361E535D5700503191 /* cross_valid_predictions_linear.txt */; };
+		9D1FD5871E535D5700503191 /* cross_valid_predictions_rf.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5371E535D5700503191 /* cross_valid_predictions_rf.txt */; };
+		9D1FD5881E535D5700503191 /* cross_valid_predictions_svm.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5381E535D5700503191 /* cross_valid_predictions_svm.txt */; };
+		9D1FD5891E535D5700503191 /* cross_validation.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD53A1E535D5700503191 /* cross_validation.py */; };
+		9D1FD58A1E535D5700503191 /* generateFeatures.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD53B1E535D5700503191 /* generateFeatures.py */; };
+		9D1FD58B1E535D5700503191 /* trainModel.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD53C1E535D5700503191 /* trainModel.py */; };
+		9D1FD58C1E535D5700503191 /* frame_rate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD53E1E535D5700503191 /* frame_rate.cpp */; };
+		9D1FD58D1E535D5700503191 /* frame_rate.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD53F1E535D5700503191 /* frame_rate.py */; };
+		9D1FD58E1E535D5700503191 /* imfill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5411E535D5700503191 /* imfill.cpp */; };
+		9D1FD58F1E535D5700503191 /* imfill.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5421E535D5700503191 /* imfill.py */; };
+		9D1FD5901E535D5700503191 /* nickel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5431E535D5700503191 /* nickel.jpg */; };
+		9D1FD5911E535D5700503191 /* book1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5451E535D5700503191 /* book1.jpg */; };
+		9D1FD5921E535D5700503191 /* book2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5461E535D5700503191 /* book2.jpg */; };
+		9D1FD5931E535D5700503191 /* first-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5471E535D5700503191 /* first-image.jpg */; };
+		9D1FD5941E535D5700503191 /* homography.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5481E535D5700503191 /* homography.py */; };
+		9D1FD5951E535D5700503191 /* homography2.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5491E535D5700503191 /* homography2.py */; };
+		9D1FD5961E535D5700503191 /* homography_book.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD54A1E535D5700503191 /* homography_book.py */; };
+		9D1FD5971E535D5700503191 /* perspective-correction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD54B1E535D5700503191 /* perspective-correction.cpp */; };
+		9D1FD5981E535D5700503191 /* perspective-correction.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD54C1E535D5700503191 /* perspective-correction.py */; };
+		9D1FD5991E535D5700503191 /* times-square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD54D1E535D5700503191 /* times-square.jpg */; };
+		9D1FD59A1E535D5700503191 /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD54E1E535D5700503191 /* utils.py */; };
+		9D1FD59B1E535D5700503191 /* virtual-billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD54F1E535D5700503191 /* virtual-billboard.cpp */; };
+		9D1FD59C1E535D5700503191 /* virtual-billboard.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5501E535D5700503191 /* virtual-billboard.py */; };
+		9D1FD59D1E535D5700503191 /* image_alignment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5521E535D5700503191 /* image_alignment.cpp */; };
+		9D1FD59E1E535D5700503191 /* image_alignment.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5531E535D5700503191 /* image_alignment.py */; };
+		9D1FD59F1E535D5700503191 /* image_alignment_simple_example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5541E535D5700503191 /* image_alignment_simple_example.cpp */; };
+		9D1FD5A01E535D5700503191 /* image_alignment_simple_example.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5551E535D5700503191 /* image_alignment_simple_example.py */; };
+		9D1FD5A11E535D5700503191 /* bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5571E535D5700503191 /* bridge.jpg */; };
+		9D1FD5A21E535D5700503191 /* emir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5581E535D5700503191 /* emir.jpg */; };
+		9D1FD5A31E535D5700503191 /* girls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5591E535D5700503191 /* girls.jpg */; };
+		9D1FD5A41E535D5700503191 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD55A1E535D5700503191 /* image1.jpg */; };
+		9D1FD5A51E535D5700503191 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD55B1E535D5700503191 /* image2.jpg */; };
+		9D1FD5A61E535D5700503191 /* earth-16-bit-per-channel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD55D1E535D5700503191 /* earth-16-bit-per-channel.png */; };
+		9D1FD5A71E535D5700503191 /* imread_examples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD55E1E535D5700503191 /* imread_examples.cpp */; };
+		9D1FD5A81E535D5700503191 /* imread_examples.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD55F1E535D5700503191 /* imread_examples.py */; };
+		9D1FD5A91E535D5700503191 /* cow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5611E535D5700503191 /* cow.jpg */; };
+		9D1FD5AA1E535D5700503191 /* npr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5621E535D5700503191 /* npr.cpp */; };
+		9D1FD5AB1E535D5700503191 /* npr.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5631E535D5700503191 /* npr.py */; };
+		9D1FD5AC1E535D5700503191 /* camviewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5651E535D5700503191 /* camviewer.cpp */; };
+		9D1FD5AD1E535D5700503191 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5671E535D5700503191 /* main.cpp */; };
+		9D1FD5AE1E535D5700503191 /* mainwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5681E535D5700503191 /* mainwindow.cpp */; };
+		9D1FD5AF1E535D5700503191 /* mainwindow.ui in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD56A1E535D5700503191 /* mainwindow.ui */; };
+		9D1FD5B01E535D5700503191 /* qt-test.pro in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD56B1E535D5700503191 /* qt-test.pro */; };
+		9D1FD5B11E535D5700503191 /* rotm2euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD56D1E535D5700503191 /* rotm2euler.cpp */; };
+		9D1FD5B21E535D5700503191 /* rotm2euler.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD56E1E535D5700503191 /* rotm2euler.py */; };
+		9D1FD5B31E535D5700503191 /* clone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5701E535D5700503191 /* clone.cpp */; };
+		9D1FD5B41E535D5700503191 /* clone.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5711E535D5700503191 /* clone.py */; };
+		9D1FD5B51E535D5700503191 /* airplane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5731E535D5700503191 /* airplane.jpg */; };
+		9D1FD5B61E535D5700503191 /* iloveyouticket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5741E535D5700503191 /* iloveyouticket.jpg */; };
+		9D1FD5B71E535D5700503191 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5751E535D5700503191 /* sky.jpg */; };
+		9D1FD5B81E535D5700503191 /* wood-texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5761E535D5700503191 /* wood-texture.jpg */; };
+		9D1FD5B91E535D5700503191 /* normal_versus_mixed_clone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5771E535D5700503191 /* normal_versus_mixed_clone.cpp */; };
+		9D1FD5BA1E535D5700503191 /* normal_versus_mixed_clone.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5781E535D5700503191 /* normal_versus_mixed_clone.py */; };
+		9D1FD5BB1E535D5700503191 /* threshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD57A1E535D5700503191 /* threshold.cpp */; };
+		9D1FD5BC1E535D5700503191 /* threshold.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD57B1E535D5700503191 /* threshold.png */; };
+		9D1FD5BD1E535D5700503191 /* threshold.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD57C1E535D5700503191 /* threshold.py */; };
+		9D1FD5BE1E535D5700503191 /* robot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD57E1E535D5700503191 /* robot.jpg */; };
+		9D1FD5BF1E535D5700503191 /* warpTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD57F1E535D5700503191 /* warpTriangle.cpp */; };
+		9D1FD5C01E535D5700503191 /* warpTriangle.py in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD5801E535D5700503191 /* warpTriangle.py */; };
+		9D1FD5C31E535FD900503191 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5C21E535FD900503191 /* AVFoundation.framework */; };
+		9D1FD5C51E535FEF00503191 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5C41E535FEF00503191 /* Accelerate.framework */; };
+		9D1FD5C71E535FFA00503191 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5C61E535FFA00503191 /* AssetsLibrary.framework */; };
+		9D1FD5C91E53601300503191 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5C81E53601300503191 /* CoreGraphics.framework */; };
+		9D1FD5CB1E53602100503191 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5CA1E53602100503191 /* CoreImage.framework */; };
+		9D1FD5CD1E53602B00503191 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5CC1E53602B00503191 /* CoreMedia.framework */; };
+		9D1FD5CF1E53603800503191 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5CE1E53603800503191 /* CoreVideo.framework */; };
+		9D1FD5D11E53604200503191 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5D01E53604200503191 /* QuartzCore.framework */; };
+		9D1FD5D31E53604C00503191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5D21E53604C00503191 /* UIKit.framework */; };
+		9D1FD5D51E53605300503191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5D41E53605300503191 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D1FD4B71E53595300503191 /* OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1FD4BA1E53595300503191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D1FD4BC1E53595300503191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D1FD4BF1E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D1FD4C11E53595300503191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D1FD4C41E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D1FD4C61E53595300503191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D1FD4CD1E53599C00503191 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		9D1FD4D21E535A3300503191 /* donald_trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donald_trump.jpg; sourceTree = "<group>"; };
+		9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = donald_trump.jpg.txt; sourceTree = "<group>"; };
+		9D1FD4D41E535A3300503191 /* faceSwap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceSwap.cpp; sourceTree = "<group>"; };
+		9D1FD4D51E535A3300503191 /* faceSwap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = faceSwap.py; sourceTree = "<group>"; };
+		9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hillary_clinton.jpg; sourceTree = "<group>"; };
+		9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hillary_clinton.jpg.txt; sourceTree = "<group>"; };
+		9D1FD4D81E535A3300503191 /* ted_cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ted_cruz.jpg; sourceTree = "<group>"; };
+		9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ted_cruz.jpg.txt; sourceTree = "<group>"; };
+		9D1FD4E31E535C3700503191 /* blob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blob.cpp; sourceTree = "<group>"; };
+		9D1FD4E41E535C3700503191 /* blob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blob.jpg; sourceTree = "<group>"; };
+		9D1FD4E51E535C3700503191 /* blob.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = blob.py; sourceTree = "<group>"; };
+		9D1FD4E71E535C3700503191 /* colormap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colormap.cpp; sourceTree = "<group>"; };
+		9D1FD4E81E535C3700503191 /* colormap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = colormap.py; sourceTree = "<group>"; };
+		9D1FD4E91E535C3700503191 /* custom_colormap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = custom_colormap.cpp; sourceTree = "<group>"; };
+		9D1FD4EA1E535C3700503191 /* custom_colormap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = custom_colormap.py; sourceTree = "<group>"; };
+		9D1FD4EB1E535C3700503191 /* pluto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pluto.jpg; sourceTree = "<group>"; };
+		9D1FD4ED1E535C3700503191 /* delaunay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = delaunay.cpp; sourceTree = "<group>"; };
+		9D1FD4EE1E535C3700503191 /* delaunay.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = delaunay.py; sourceTree = "<group>"; };
+		9D1FD4EF1E535C3700503191 /* obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obama.jpg; sourceTree = "<group>"; };
+		9D1FD4F01E535C3700503191 /* obama.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = obama.txt; sourceTree = "<group>"; };
+		9D1FD4F21E535C3700503191 /* faceAverage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceAverage.cpp; sourceTree = "<group>"; };
+		9D1FD4F31E535C3700503191 /* faceAverage.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = faceAverage.py; sourceTree = "<group>"; };
+		9D1FD4F51E535C3700503191 /* barak-obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "barak-obama.jpg"; sourceTree = "<group>"; };
+		9D1FD4F61E535C3700503191 /* barak-obama.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "barak-obama.jpg.txt"; sourceTree = "<group>"; };
+		9D1FD4F71E535C3700503191 /* bill-clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bill-clinton.jpg"; sourceTree = "<group>"; };
+		9D1FD4F81E535C3700503191 /* bill-clinton.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bill-clinton.jpg.txt"; sourceTree = "<group>"; };
+		9D1FD4F91E535C3700503191 /* george-h-bush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "george-h-bush.jpg"; sourceTree = "<group>"; };
+		9D1FD4FA1E535C3700503191 /* george-h-bush.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "george-h-bush.jpg.txt"; sourceTree = "<group>"; };
+		9D1FD4FB1E535C3700503191 /* george-w-bush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "george-w-bush.jpg"; sourceTree = "<group>"; };
+		9D1FD4FC1E535C3700503191 /* george-w-bush.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "george-w-bush.jpg.txt"; sourceTree = "<group>"; };
+		9D1FD4FD1E535C3700503191 /* jimmy-carter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jimmy-carter.jpg"; sourceTree = "<group>"; };
+		9D1FD4FE1E535C3700503191 /* jimmy-carter.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "jimmy-carter.jpg.txt"; sourceTree = "<group>"; };
+		9D1FD4FF1E535C3700503191 /* ronald-regan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ronald-regan.jpg"; sourceTree = "<group>"; };
+		9D1FD5001E535C3700503191 /* ronald-regan.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ronald-regan.jpg.txt"; sourceTree = "<group>"; };
+		9D1FD5021E535C3700503191 /* donald_trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donald_trump.jpg; sourceTree = "<group>"; };
+		9D1FD5031E535C3700503191 /* donald_trump.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = donald_trump.jpg.txt; sourceTree = "<group>"; };
+		9D1FD5041E535C3700503191 /* faceMorph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceMorph.cpp; sourceTree = "<group>"; };
+		9D1FD5051E535C3700503191 /* faceMorph.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = faceMorph.py; sourceTree = "<group>"; };
+		9D1FD5061E535C3700503191 /* hillary_clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hillary_clinton.jpg; sourceTree = "<group>"; };
+		9D1FD5071E535C3700503191 /* hillary_clinton.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hillary_clinton.jpg.txt; sourceTree = "<group>"; };
+		9D1FD5081E535C3700503191 /* ted_cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ted_cruz.jpg; sourceTree = "<group>"; };
+		9D1FD5091E535C3700503191 /* ted_cruz.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ted_cruz.jpg.txt; sourceTree = "<group>"; };
+		9D1FD50A1E535C3700503191 /* tri.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tri.txt; sourceTree = "<group>"; };
+		9D1FD5301E535D5700503191 /* features_ALL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = features_ALL.txt; sourceTree = "<group>"; };
+		9D1FD5311E535D5700503191 /* landmarks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = landmarks.txt; sourceTree = "<group>"; };
+		9D1FD5321E535D5700503191 /* ratings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ratings.txt; sourceTree = "<group>"; };
+		9D1FD5341E535D5700503191 /* cross_valid_predictions_gpr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cross_valid_predictions_gpr.txt; sourceTree = "<group>"; };
+		9D1FD5351E535D5700503191 /* cross_valid_predictions_knn.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cross_valid_predictions_knn.txt; sourceTree = "<group>"; };
+		9D1FD5361E535D5700503191 /* cross_valid_predictions_linear.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cross_valid_predictions_linear.txt; sourceTree = "<group>"; };
+		9D1FD5371E535D5700503191 /* cross_valid_predictions_rf.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cross_valid_predictions_rf.txt; sourceTree = "<group>"; };
+		9D1FD5381E535D5700503191 /* cross_valid_predictions_svm.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cross_valid_predictions_svm.txt; sourceTree = "<group>"; };
+		9D1FD53A1E535D5700503191 /* cross_validation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cross_validation.py; sourceTree = "<group>"; };
+		9D1FD53B1E535D5700503191 /* generateFeatures.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generateFeatures.py; sourceTree = "<group>"; };
+		9D1FD53C1E535D5700503191 /* trainModel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = trainModel.py; sourceTree = "<group>"; };
+		9D1FD53E1E535D5700503191 /* frame_rate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frame_rate.cpp; sourceTree = "<group>"; };
+		9D1FD53F1E535D5700503191 /* frame_rate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = frame_rate.py; sourceTree = "<group>"; };
+		9D1FD5411E535D5700503191 /* imfill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imfill.cpp; sourceTree = "<group>"; };
+		9D1FD5421E535D5700503191 /* imfill.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = imfill.py; sourceTree = "<group>"; };
+		9D1FD5431E535D5700503191 /* nickel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nickel.jpg; sourceTree = "<group>"; };
+		9D1FD5451E535D5700503191 /* book1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book1.jpg; sourceTree = "<group>"; };
+		9D1FD5461E535D5700503191 /* book2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book2.jpg; sourceTree = "<group>"; };
+		9D1FD5471E535D5700503191 /* first-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first-image.jpg"; sourceTree = "<group>"; };
+		9D1FD5481E535D5700503191 /* homography.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = homography.py; sourceTree = "<group>"; };
+		9D1FD5491E535D5700503191 /* homography2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = homography2.py; sourceTree = "<group>"; };
+		9D1FD54A1E535D5700503191 /* homography_book.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = homography_book.py; sourceTree = "<group>"; };
+		9D1FD54B1E535D5700503191 /* perspective-correction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "perspective-correction.cpp"; sourceTree = "<group>"; };
+		9D1FD54C1E535D5700503191 /* perspective-correction.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "perspective-correction.py"; sourceTree = "<group>"; };
+		9D1FD54D1E535D5700503191 /* times-square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "times-square.jpg"; sourceTree = "<group>"; };
+		9D1FD54E1E535D5700503191 /* utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		9D1FD54F1E535D5700503191 /* virtual-billboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "virtual-billboard.cpp"; sourceTree = "<group>"; };
+		9D1FD5501E535D5700503191 /* virtual-billboard.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "virtual-billboard.py"; sourceTree = "<group>"; };
+		9D1FD5521E535D5700503191 /* image_alignment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image_alignment.cpp; sourceTree = "<group>"; };
+		9D1FD5531E535D5700503191 /* image_alignment.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = image_alignment.py; sourceTree = "<group>"; };
+		9D1FD5541E535D5700503191 /* image_alignment_simple_example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image_alignment_simple_example.cpp; sourceTree = "<group>"; };
+		9D1FD5551E535D5700503191 /* image_alignment_simple_example.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = image_alignment_simple_example.py; sourceTree = "<group>"; };
+		9D1FD5571E535D5700503191 /* bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bridge.jpg; sourceTree = "<group>"; };
+		9D1FD5581E535D5700503191 /* emir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emir.jpg; sourceTree = "<group>"; };
+		9D1FD5591E535D5700503191 /* girls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girls.jpg; sourceTree = "<group>"; };
+		9D1FD55A1E535D5700503191 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		9D1FD55B1E535D5700503191 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		9D1FD55D1E535D5700503191 /* earth-16-bit-per-channel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-16-bit-per-channel.png"; sourceTree = "<group>"; };
+		9D1FD55E1E535D5700503191 /* imread_examples.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imread_examples.cpp; sourceTree = "<group>"; };
+		9D1FD55F1E535D5700503191 /* imread_examples.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = imread_examples.py; sourceTree = "<group>"; };
+		9D1FD5611E535D5700503191 /* cow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cow.jpg; sourceTree = "<group>"; };
+		9D1FD5621E535D5700503191 /* npr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = npr.cpp; sourceTree = "<group>"; };
+		9D1FD5631E535D5700503191 /* npr.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = npr.py; sourceTree = "<group>"; };
+		9D1FD5651E535D5700503191 /* camviewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camviewer.cpp; sourceTree = "<group>"; };
+		9D1FD5661E535D5700503191 /* camviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camviewer.h; sourceTree = "<group>"; };
+		9D1FD5671E535D5700503191 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9D1FD5681E535D5700503191 /* mainwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainwindow.cpp; sourceTree = "<group>"; };
+		9D1FD5691E535D5700503191 /* mainwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainwindow.h; sourceTree = "<group>"; };
+		9D1FD56A1E535D5700503191 /* mainwindow.ui */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mainwindow.ui; sourceTree = "<group>"; };
+		9D1FD56B1E535D5700503191 /* qt-test.pro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "qt-test.pro"; sourceTree = "<group>"; };
+		9D1FD56D1E535D5700503191 /* rotm2euler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotm2euler.cpp; sourceTree = "<group>"; };
+		9D1FD56E1E535D5700503191 /* rotm2euler.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rotm2euler.py; sourceTree = "<group>"; };
+		9D1FD5701E535D5700503191 /* clone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clone.cpp; sourceTree = "<group>"; };
+		9D1FD5711E535D5700503191 /* clone.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = clone.py; sourceTree = "<group>"; };
+		9D1FD5731E535D5700503191 /* airplane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airplane.jpg; sourceTree = "<group>"; };
+		9D1FD5741E535D5700503191 /* iloveyouticket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iloveyouticket.jpg; sourceTree = "<group>"; };
+		9D1FD5751E535D5700503191 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		9D1FD5761E535D5700503191 /* wood-texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-texture.jpg"; sourceTree = "<group>"; };
+		9D1FD5771E535D5700503191 /* normal_versus_mixed_clone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normal_versus_mixed_clone.cpp; sourceTree = "<group>"; };
+		9D1FD5781E535D5700503191 /* normal_versus_mixed_clone.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = normal_versus_mixed_clone.py; sourceTree = "<group>"; };
+		9D1FD57A1E535D5700503191 /* threshold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threshold.cpp; sourceTree = "<group>"; };
+		9D1FD57B1E535D5700503191 /* threshold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threshold.png; sourceTree = "<group>"; };
+		9D1FD57C1E535D5700503191 /* threshold.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = threshold.py; sourceTree = "<group>"; };
+		9D1FD57E1E535D5700503191 /* robot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robot.jpg; sourceTree = "<group>"; };
+		9D1FD57F1E535D5700503191 /* warpTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = warpTriangle.cpp; sourceTree = "<group>"; };
+		9D1FD5801E535D5700503191 /* warpTriangle.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = warpTriangle.py; sourceTree = "<group>"; };
+		9D1FD5C21E535FD900503191 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9D1FD5C41E535FEF00503191 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9D1FD5C61E535FFA00503191 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9D1FD5C81E53601300503191 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D1FD5CA1E53602100503191 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9D1FD5CC1E53602B00503191 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9D1FD5CE1E53603800503191 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9D1FD5D01E53604200503191 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9D1FD5D21E53604C00503191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D1FD5D41E53605300503191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D1FD4B41E53595300503191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1FD5D51E53605300503191 /* Foundation.framework in Frameworks */,
+				9D1FD5D31E53604C00503191 /* UIKit.framework in Frameworks */,
+				9D1FD5D11E53604200503191 /* QuartzCore.framework in Frameworks */,
+				9D1FD5CF1E53603800503191 /* CoreVideo.framework in Frameworks */,
+				9D1FD5CD1E53602B00503191 /* CoreMedia.framework in Frameworks */,
+				9D1FD5CB1E53602100503191 /* CoreImage.framework in Frameworks */,
+				9D1FD5C91E53601300503191 /* CoreGraphics.framework in Frameworks */,
+				9D1FD5C31E535FD900503191 /* AVFoundation.framework in Frameworks */,
+				9D1FD5C71E535FFA00503191 /* AssetsLibrary.framework in Frameworks */,
+				9D1FD5C51E535FEF00503191 /* Accelerate.framework in Frameworks */,
+				9D1FD4CE1E53599C00503191 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D1FD4AE1E53595300503191 = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4CC1E53598700503191 /* Framework */,
+				9D1FD4B91E53595300503191 /* OpenCV */,
+				9D1FD4B81E53595300503191 /* Products */,
+				9D1FD5C11E535FD900503191 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D1FD4B81E53595300503191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4B71E53595300503191 /* OpenCV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D1FD4B91E53595300503191 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4CF1E5359EF00503191 /* ObjectiveInterface */,
+				9D1FD4D01E5359EF00503191 /* Swift */,
+				9D1FD4BA1E53595300503191 /* AppDelegate.swift */,
+				9D1FD4BC1E53595300503191 /* ViewController.swift */,
+				9D1FD4BE1E53595300503191 /* Main.storyboard */,
+				9D1FD4C11E53595300503191 /* Assets.xcassets */,
+				9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */,
+				9D1FD4C61E53595300503191 /* Info.plist */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		9D1FD4CC1E53598700503191 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4CD1E53599C00503191 /* opencv2.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		9D1FD4CF1E5359EF00503191 /* ObjectiveInterface */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4E21E535C3700503191 /* BlobDetector */,
+				9D1FD4E61E535C3700503191 /* Colormap */,
+				9D1FD4EC1E535C3700503191 /* Delaunay */,
+				9D1FD4F11E535C3700503191 /* FaceAverage */,
+				9D1FD5011E535C3700503191 /* FaceMorph */,
+				9D1FD4D11E535A3300503191 /* FaceSwap */,
+				9D1FD52E1E535D5700503191 /* FacialAttractiveness */,
+				9D1FD53D1E535D5700503191 /* FPS */,
+				9D1FD5401E535D5700503191 /* Holes */,
+				9D1FD5441E535D5700503191 /* Homography */,
+				9D1FD5511E535D5700503191 /* ImageAlignment */,
+				9D1FD55C1E535D5700503191 /* imread */,
+				9D1FD5601E535D5700503191 /* NonPhotorealisticRendering */,
+				9D1FD5641E535D5700503191 /* qt-test */,
+				9D1FD56C1E535D5700503191 /* RotationMatrixToEulerAngles */,
+				9D1FD56F1E535D5700503191 /* SeamlessCloning */,
+				9D1FD5791E535D5700503191 /* Threshold */,
+				9D1FD57D1E535D5700503191 /* WarpTriangle */,
+			);
+			path = ObjectiveInterface;
+			sourceTree = "<group>";
+		};
+		9D1FD4D01E5359EF00503191 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		9D1FD4D11E535A3300503191 /* FaceSwap */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4D21E535A3300503191 /* donald_trump.jpg */,
+				9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */,
+				9D1FD4D41E535A3300503191 /* faceSwap.cpp */,
+				9D1FD4D51E535A3300503191 /* faceSwap.py */,
+				9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */,
+				9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */,
+				9D1FD4D81E535A3300503191 /* ted_cruz.jpg */,
+				9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */,
+			);
+			path = FaceSwap;
+			sourceTree = "<group>";
+		};
+		9D1FD4E21E535C3700503191 /* BlobDetector */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4E31E535C3700503191 /* blob.cpp */,
+				9D1FD4E41E535C3700503191 /* blob.jpg */,
+				9D1FD4E51E535C3700503191 /* blob.py */,
+			);
+			path = BlobDetector;
+			sourceTree = "<group>";
+		};
+		9D1FD4E61E535C3700503191 /* Colormap */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4E71E535C3700503191 /* colormap.cpp */,
+				9D1FD4E81E535C3700503191 /* colormap.py */,
+				9D1FD4E91E535C3700503191 /* custom_colormap.cpp */,
+				9D1FD4EA1E535C3700503191 /* custom_colormap.py */,
+				9D1FD4EB1E535C3700503191 /* pluto.jpg */,
+			);
+			path = Colormap;
+			sourceTree = "<group>";
+		};
+		9D1FD4EC1E535C3700503191 /* Delaunay */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4ED1E535C3700503191 /* delaunay.cpp */,
+				9D1FD4EE1E535C3700503191 /* delaunay.py */,
+				9D1FD4EF1E535C3700503191 /* obama.jpg */,
+				9D1FD4F01E535C3700503191 /* obama.txt */,
+			);
+			path = Delaunay;
+			sourceTree = "<group>";
+		};
+		9D1FD4F11E535C3700503191 /* FaceAverage */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4F21E535C3700503191 /* faceAverage.cpp */,
+				9D1FD4F31E535C3700503191 /* faceAverage.py */,
+				9D1FD4F41E535C3700503191 /* presidents */,
+			);
+			path = FaceAverage;
+			sourceTree = "<group>";
+		};
+		9D1FD4F41E535C3700503191 /* presidents */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4F51E535C3700503191 /* barak-obama.jpg */,
+				9D1FD4F61E535C3700503191 /* barak-obama.jpg.txt */,
+				9D1FD4F71E535C3700503191 /* bill-clinton.jpg */,
+				9D1FD4F81E535C3700503191 /* bill-clinton.jpg.txt */,
+				9D1FD4F91E535C3700503191 /* george-h-bush.jpg */,
+				9D1FD4FA1E535C3700503191 /* george-h-bush.jpg.txt */,
+				9D1FD4FB1E535C3700503191 /* george-w-bush.jpg */,
+				9D1FD4FC1E535C3700503191 /* george-w-bush.jpg.txt */,
+				9D1FD4FD1E535C3700503191 /* jimmy-carter.jpg */,
+				9D1FD4FE1E535C3700503191 /* jimmy-carter.jpg.txt */,
+				9D1FD4FF1E535C3700503191 /* ronald-regan.jpg */,
+				9D1FD5001E535C3700503191 /* ronald-regan.jpg.txt */,
+			);
+			path = presidents;
+			sourceTree = "<group>";
+		};
+		9D1FD5011E535C3700503191 /* FaceMorph */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5021E535C3700503191 /* donald_trump.jpg */,
+				9D1FD5031E535C3700503191 /* donald_trump.jpg.txt */,
+				9D1FD5041E535C3700503191 /* faceMorph.cpp */,
+				9D1FD5051E535C3700503191 /* faceMorph.py */,
+				9D1FD5061E535C3700503191 /* hillary_clinton.jpg */,
+				9D1FD5071E535C3700503191 /* hillary_clinton.jpg.txt */,
+				9D1FD5081E535C3700503191 /* ted_cruz.jpg */,
+				9D1FD5091E535C3700503191 /* ted_cruz.jpg.txt */,
+				9D1FD50A1E535C3700503191 /* tri.txt */,
+			);
+			path = FaceMorph;
+			sourceTree = "<group>";
+		};
+		9D1FD52E1E535D5700503191 /* FacialAttractiveness */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD52F1E535D5700503191 /* data */,
+				9D1FD5331E535D5700503191 /* results */,
+				9D1FD5391E535D5700503191 /* source */,
+			);
+			path = FacialAttractiveness;
+			sourceTree = "<group>";
+		};
+		9D1FD52F1E535D5700503191 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5301E535D5700503191 /* features_ALL.txt */,
+				9D1FD5311E535D5700503191 /* landmarks.txt */,
+				9D1FD5321E535D5700503191 /* ratings.txt */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		9D1FD5331E535D5700503191 /* results */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5341E535D5700503191 /* cross_valid_predictions_gpr.txt */,
+				9D1FD5351E535D5700503191 /* cross_valid_predictions_knn.txt */,
+				9D1FD5361E535D5700503191 /* cross_valid_predictions_linear.txt */,
+				9D1FD5371E535D5700503191 /* cross_valid_predictions_rf.txt */,
+				9D1FD5381E535D5700503191 /* cross_valid_predictions_svm.txt */,
+			);
+			path = results;
+			sourceTree = "<group>";
+		};
+		9D1FD5391E535D5700503191 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD53A1E535D5700503191 /* cross_validation.py */,
+				9D1FD53B1E535D5700503191 /* generateFeatures.py */,
+				9D1FD53C1E535D5700503191 /* trainModel.py */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		9D1FD53D1E535D5700503191 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD53E1E535D5700503191 /* frame_rate.cpp */,
+				9D1FD53F1E535D5700503191 /* frame_rate.py */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		9D1FD5401E535D5700503191 /* Holes */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5411E535D5700503191 /* imfill.cpp */,
+				9D1FD5421E535D5700503191 /* imfill.py */,
+				9D1FD5431E535D5700503191 /* nickel.jpg */,
+			);
+			path = Holes;
+			sourceTree = "<group>";
+		};
+		9D1FD5441E535D5700503191 /* Homography */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5451E535D5700503191 /* book1.jpg */,
+				9D1FD5461E535D5700503191 /* book2.jpg */,
+				9D1FD5471E535D5700503191 /* first-image.jpg */,
+				9D1FD5481E535D5700503191 /* homography.py */,
+				9D1FD5491E535D5700503191 /* homography2.py */,
+				9D1FD54A1E535D5700503191 /* homography_book.py */,
+				9D1FD54B1E535D5700503191 /* perspective-correction.cpp */,
+				9D1FD54C1E535D5700503191 /* perspective-correction.py */,
+				9D1FD54D1E535D5700503191 /* times-square.jpg */,
+				9D1FD54E1E535D5700503191 /* utils.py */,
+				9D1FD54F1E535D5700503191 /* virtual-billboard.cpp */,
+				9D1FD5501E535D5700503191 /* virtual-billboard.py */,
+			);
+			path = Homography;
+			sourceTree = "<group>";
+		};
+		9D1FD5511E535D5700503191 /* ImageAlignment */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5521E535D5700503191 /* image_alignment.cpp */,
+				9D1FD5531E535D5700503191 /* image_alignment.py */,
+				9D1FD5541E535D5700503191 /* image_alignment_simple_example.cpp */,
+				9D1FD5551E535D5700503191 /* image_alignment_simple_example.py */,
+				9D1FD5561E535D5700503191 /* images */,
+			);
+			path = ImageAlignment;
+			sourceTree = "<group>";
+		};
+		9D1FD5561E535D5700503191 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5571E535D5700503191 /* bridge.jpg */,
+				9D1FD5581E535D5700503191 /* emir.jpg */,
+				9D1FD5591E535D5700503191 /* girls.jpg */,
+				9D1FD55A1E535D5700503191 /* image1.jpg */,
+				9D1FD55B1E535D5700503191 /* image2.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		9D1FD55C1E535D5700503191 /* imread */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD55D1E535D5700503191 /* earth-16-bit-per-channel.png */,
+				9D1FD55E1E535D5700503191 /* imread_examples.cpp */,
+				9D1FD55F1E535D5700503191 /* imread_examples.py */,
+			);
+			path = imread;
+			sourceTree = "<group>";
+		};
+		9D1FD5601E535D5700503191 /* NonPhotorealisticRendering */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5611E535D5700503191 /* cow.jpg */,
+				9D1FD5621E535D5700503191 /* npr.cpp */,
+				9D1FD5631E535D5700503191 /* npr.py */,
+			);
+			path = NonPhotorealisticRendering;
+			sourceTree = "<group>";
+		};
+		9D1FD5641E535D5700503191 /* qt-test */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5651E535D5700503191 /* camviewer.cpp */,
+				9D1FD5661E535D5700503191 /* camviewer.h */,
+				9D1FD5671E535D5700503191 /* main.cpp */,
+				9D1FD5681E535D5700503191 /* mainwindow.cpp */,
+				9D1FD5691E535D5700503191 /* mainwindow.h */,
+				9D1FD56A1E535D5700503191 /* mainwindow.ui */,
+				9D1FD56B1E535D5700503191 /* qt-test.pro */,
+			);
+			path = "qt-test";
+			sourceTree = "<group>";
+		};
+		9D1FD56C1E535D5700503191 /* RotationMatrixToEulerAngles */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD56D1E535D5700503191 /* rotm2euler.cpp */,
+				9D1FD56E1E535D5700503191 /* rotm2euler.py */,
+			);
+			path = RotationMatrixToEulerAngles;
+			sourceTree = "<group>";
+		};
+		9D1FD56F1E535D5700503191 /* SeamlessCloning */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5701E535D5700503191 /* clone.cpp */,
+				9D1FD5711E535D5700503191 /* clone.py */,
+				9D1FD5721E535D5700503191 /* images */,
+				9D1FD5771E535D5700503191 /* normal_versus_mixed_clone.cpp */,
+				9D1FD5781E535D5700503191 /* normal_versus_mixed_clone.py */,
+			);
+			path = SeamlessCloning;
+			sourceTree = "<group>";
+		};
+		9D1FD5721E535D5700503191 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5731E535D5700503191 /* airplane.jpg */,
+				9D1FD5741E535D5700503191 /* iloveyouticket.jpg */,
+				9D1FD5751E535D5700503191 /* sky.jpg */,
+				9D1FD5761E535D5700503191 /* wood-texture.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		9D1FD5791E535D5700503191 /* Threshold */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD57A1E535D5700503191 /* threshold.cpp */,
+				9D1FD57B1E535D5700503191 /* threshold.png */,
+				9D1FD57C1E535D5700503191 /* threshold.py */,
+			);
+			path = Threshold;
+			sourceTree = "<group>";
+		};
+		9D1FD57D1E535D5700503191 /* WarpTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD57E1E535D5700503191 /* robot.jpg */,
+				9D1FD57F1E535D5700503191 /* warpTriangle.cpp */,
+				9D1FD5801E535D5700503191 /* warpTriangle.py */,
+			);
+			path = WarpTriangle;
+			sourceTree = "<group>";
+		};
+		9D1FD5C11E535FD900503191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD5D41E53605300503191 /* Foundation.framework */,
+				9D1FD5D21E53604C00503191 /* UIKit.framework */,
+				9D1FD5D01E53604200503191 /* QuartzCore.framework */,
+				9D1FD5CE1E53603800503191 /* CoreVideo.framework */,
+				9D1FD5CC1E53602B00503191 /* CoreMedia.framework */,
+				9D1FD5CA1E53602100503191 /* CoreImage.framework */,
+				9D1FD5C81E53601300503191 /* CoreGraphics.framework */,
+				9D1FD5C61E535FFA00503191 /* AssetsLibrary.framework */,
+				9D1FD5C41E535FEF00503191 /* Accelerate.framework */,
+				9D1FD5C21E535FD900503191 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D1FD4B61E53595300503191 /* OpenCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1FD4C91E53595300503191 /* Build configuration list for PBXNativeTarget "OpenCV" */;
+			buildPhases = (
+				9D1FD4B31E53595300503191 /* Sources */,
+				9D1FD4B41E53595300503191 /* Frameworks */,
+				9D1FD4B51E53595300503191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCV;
+			productName = OpenCV;
+			productReference = 9D1FD4B71E53595300503191 /* OpenCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D1FD4AF1E53595300503191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = durgesh;
+				TargetAttributes = {
+					9D1FD4B61E53595300503191 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7ANMTSLCYM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9D1FD4B21E53595300503191 /* Build configuration list for PBXProject "OpenCV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D1FD4AE1E53595300503191;
+			productRefGroup = 9D1FD4B81E53595300503191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D1FD4B61E53595300503191 /* OpenCV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D1FD4B51E53595300503191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1FD5221E535C3700503191 /* jimmy-carter.jpg.txt in Resources */,
+				9D1FD5BC1E535D5700503191 /* threshold.png in Resources */,
+				9D1FD5831E535D5700503191 /* ratings.txt in Resources */,
+				9D1FD5A41E535D5700503191 /* image1.jpg in Resources */,
+				9D1FD5191E535C3700503191 /* barak-obama.jpg in Resources */,
+				9D1FD5291E535C3700503191 /* hillary_clinton.jpg in Resources */,
+				9D1FD52A1E535C3700503191 /* hillary_clinton.jpg.txt in Resources */,
+				9D1FD5A51E535D5700503191 /* image2.jpg in Resources */,
+				9D1FD58D1E535D5700503191 /* frame_rate.py in Resources */,
+				9D1FD5A11E535D5700503191 /* bridge.jpg in Resources */,
+				9D1FD5B71E535D5700503191 /* sky.jpg in Resources */,
+				9D1FD51A1E535C3700503191 /* barak-obama.jpg.txt in Resources */,
+				9D1FD4DA1E535A3300503191 /* donald_trump.jpg in Resources */,
+				9D1FD5851E535D5700503191 /* cross_valid_predictions_knn.txt in Resources */,
+				9D1FD5991E535D5700503191 /* times-square.jpg in Resources */,
+				9D1FD59E1E535D5700503191 /* image_alignment.py in Resources */,
+				9D1FD5BE1E535D5700503191 /* robot.jpg in Resources */,
+				9D1FD59C1E535D5700503191 /* virtual-billboard.py in Resources */,
+				9D1FD4C51E53595300503191 /* LaunchScreen.storyboard in Resources */,
+				9D1FD5121E535C3700503191 /* pluto.jpg in Resources */,
+				9D1FD5C01E535D5700503191 /* warpTriangle.py in Resources */,
+				9D1FD4DE1E535A3300503191 /* hillary_clinton.jpg in Resources */,
+				9D1FD51F1E535C3700503191 /* george-w-bush.jpg in Resources */,
+				9D1FD5251E535C3700503191 /* donald_trump.jpg in Resources */,
+				9D1FD5BD1E535D5700503191 /* threshold.py in Resources */,
+				9D1FD5841E535D5700503191 /* cross_valid_predictions_gpr.txt in Resources */,
+				9D1FD5981E535D5700503191 /* perspective-correction.py in Resources */,
+				9D1FD5891E535D5700503191 /* cross_validation.py in Resources */,
+				9D1FD52B1E535C3700503191 /* ted_cruz.jpg in Resources */,
+				9D1FD5181E535C3700503191 /* faceAverage.py in Resources */,
+				9D1FD5B81E535D5700503191 /* wood-texture.jpg in Resources */,
+				9D1FD5281E535C3700503191 /* faceMorph.py in Resources */,
+				9D1FD5241E535C3700503191 /* ronald-regan.jpg.txt in Resources */,
+				9D1FD5A61E535D5700503191 /* earth-16-bit-per-channel.png in Resources */,
+				9D1FD58B1E535D5700503191 /* trainModel.py in Resources */,
+				9D1FD5A01E535D5700503191 /* image_alignment_simple_example.py in Resources */,
+				9D1FD5961E535D5700503191 /* homography_book.py in Resources */,
+				9D1FD4E11E535A3300503191 /* ted_cruz.jpg.txt in Resources */,
+				9D1FD5B41E535D5700503191 /* clone.py in Resources */,
+				9D1FD5141E535C3700503191 /* delaunay.py in Resources */,
+				9D1FD4E01E535A3300503191 /* ted_cruz.jpg in Resources */,
+				9D1FD5901E535D5700503191 /* nickel.jpg in Resources */,
+				9D1FD58A1E535D5700503191 /* generateFeatures.py in Resources */,
+				9D1FD5A21E535D5700503191 /* emir.jpg in Resources */,
+				9D1FD5A91E535D5700503191 /* cow.jpg in Resources */,
+				9D1FD5821E535D5700503191 /* landmarks.txt in Resources */,
+				9D1FD5951E535D5700503191 /* homography2.py in Resources */,
+				9D1FD51B1E535C3700503191 /* bill-clinton.jpg in Resources */,
+				9D1FD51C1E535C3700503191 /* bill-clinton.jpg.txt in Resources */,
+				9D1FD5161E535C3700503191 /* obama.txt in Resources */,
+				9D1FD51D1E535C3700503191 /* george-h-bush.jpg in Resources */,
+				9D1FD5211E535C3700503191 /* jimmy-carter.jpg in Resources */,
+				9D1FD5B51E535D5700503191 /* airplane.jpg in Resources */,
+				9D1FD50F1E535C3700503191 /* colormap.py in Resources */,
+				9D1FD50C1E535C3700503191 /* blob.jpg in Resources */,
+				9D1FD5B61E535D5700503191 /* iloveyouticket.jpg in Resources */,
+				9D1FD4C21E53595300503191 /* Assets.xcassets in Resources */,
+				9D1FD5111E535C3700503191 /* custom_colormap.py in Resources */,
+				9D1FD59A1E535D5700503191 /* utils.py in Resources */,
+				9D1FD4DB1E535A3300503191 /* donald_trump.jpg.txt in Resources */,
+				9D1FD5261E535C3700503191 /* donald_trump.jpg.txt in Resources */,
+				9D1FD5911E535D5700503191 /* book1.jpg in Resources */,
+				9D1FD58F1E535D5700503191 /* imfill.py in Resources */,
+				9D1FD4DD1E535A3300503191 /* faceSwap.py in Resources */,
+				9D1FD5941E535D5700503191 /* homography.py in Resources */,
+				9D1FD5AF1E535D5700503191 /* mainwindow.ui in Resources */,
+				9D1FD5BA1E535D5700503191 /* normal_versus_mixed_clone.py in Resources */,
+				9D1FD51E1E535C3700503191 /* george-h-bush.jpg.txt in Resources */,
+				9D1FD5871E535D5700503191 /* cross_valid_predictions_rf.txt in Resources */,
+				9D1FD5A81E535D5700503191 /* imread_examples.py in Resources */,
+				9D1FD5B01E535D5700503191 /* qt-test.pro in Resources */,
+				9D1FD5151E535C3700503191 /* obama.jpg in Resources */,
+				9D1FD5201E535C3700503191 /* george-w-bush.jpg.txt in Resources */,
+				9D1FD52D1E535C3700503191 /* tri.txt in Resources */,
+				9D1FD50D1E535C3700503191 /* blob.py in Resources */,
+				9D1FD5B21E535D5700503191 /* rotm2euler.py in Resources */,
+				9D1FD5881E535D5700503191 /* cross_valid_predictions_svm.txt in Resources */,
+				9D1FD4C01E53595300503191 /* Main.storyboard in Resources */,
+				9D1FD5861E535D5700503191 /* cross_valid_predictions_linear.txt in Resources */,
+				9D1FD5A31E535D5700503191 /* girls.jpg in Resources */,
+				9D1FD52C1E535C3700503191 /* ted_cruz.jpg.txt in Resources */,
+				9D1FD5811E535D5700503191 /* features_ALL.txt in Resources */,
+				9D1FD4DF1E535A3300503191 /* hillary_clinton.jpg.txt in Resources */,
+				9D1FD5921E535D5700503191 /* book2.jpg in Resources */,
+				9D1FD5AB1E535D5700503191 /* npr.py in Resources */,
+				9D1FD5931E535D5700503191 /* first-image.jpg in Resources */,
+				9D1FD5231E535C3700503191 /* ronald-regan.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D1FD4B31E53595300503191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1FD50B1E535C3700503191 /* blob.cpp in Sources */,
+				9D1FD59F1E535D5700503191 /* image_alignment_simple_example.cpp in Sources */,
+				9D1FD5101E535C3700503191 /* custom_colormap.cpp in Sources */,
+				9D1FD58E1E535D5700503191 /* imfill.cpp in Sources */,
+				9D1FD5AE1E535D5700503191 /* mainwindow.cpp in Sources */,
+				9D1FD5B11E535D5700503191 /* rotm2euler.cpp in Sources */,
+				9D1FD5BF1E535D5700503191 /* warpTriangle.cpp in Sources */,
+				9D1FD5A71E535D5700503191 /* imread_examples.cpp in Sources */,
+				9D1FD5B31E535D5700503191 /* clone.cpp in Sources */,
+				9D1FD5171E535C3700503191 /* faceAverage.cpp in Sources */,
+				9D1FD4BD1E53595300503191 /* ViewController.swift in Sources */,
+				9D1FD50E1E535C3700503191 /* colormap.cpp in Sources */,
+				9D1FD5271E535C3700503191 /* faceMorph.cpp in Sources */,
+				9D1FD5B91E535D5700503191 /* normal_versus_mixed_clone.cpp in Sources */,
+				9D1FD5AC1E535D5700503191 /* camviewer.cpp in Sources */,
+				9D1FD5AA1E535D5700503191 /* npr.cpp in Sources */,
+				9D1FD5131E535C3700503191 /* delaunay.cpp in Sources */,
+				9D1FD58C1E535D5700503191 /* frame_rate.cpp in Sources */,
+				9D1FD5AD1E535D5700503191 /* main.cpp in Sources */,
+				9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */,
+				9D1FD5BB1E535D5700503191 /* threshold.cpp in Sources */,
+				9D1FD5971E535D5700503191 /* perspective-correction.cpp in Sources */,
+				9D1FD59D1E535D5700503191 /* image_alignment.cpp in Sources */,
+				9D1FD4DC1E535A3300503191 /* faceSwap.cpp in Sources */,
+				9D1FD59B1E535D5700503191 /* virtual-billboard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D1FD4BE1E53595300503191 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D1FD4BF1E53595300503191 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D1FD4C41E53595300503191 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D1FD4C71E53595300503191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9D1FD4C81E53595300503191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D1FD4CA1E53595300503191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7ANMTSLCYM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.durgesh.OpenCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9D1FD4CB1E53595300503191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7ANMTSLCYM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.durgesh.OpenCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D1FD4B21E53595300503191 /* Build configuration list for PBXProject "OpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1FD4C71E53595300503191 /* Debug */,
+				9D1FD4C81E53595300503191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1FD4C91E53595300503191 /* Build configuration list for PBXNativeTarget "OpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1FD4CA1E53595300503191 /* Debug */,
+				9D1FD4CB1E53595300503191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D1FD4AF1E53595300503191 /* Project object */;
+}
