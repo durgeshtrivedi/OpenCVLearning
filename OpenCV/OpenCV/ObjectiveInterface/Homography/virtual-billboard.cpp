@@ -46,7 +46,7 @@ int main11( int argc, char** argv)
     Mat im_dst = imread("times-square.jpg");
 
     
-    // Set data for mouse handler
+    // Set data for mouse handler   
     Mat im_temp = im_dst.clone();
     userdata data;
     data.im = im_temp;

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BA1E53595300503191 /* AppDelegate.swift */; };
-		9D1FD4BD1E53595300503191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BC1E53595300503191 /* ViewController.swift */; };
+		9D1FD4BD1E53595300503191 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BC1E53595300503191 /* TableViewController.swift */; };
 		9D1FD4C01E53595300503191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BE1E53595300503191 /* Main.storyboard */; };
 		9D1FD4C21E53595300503191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4C11E53595300503191 /* Assets.xcassets */; };
 		9D1FD4C51E53595300503191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */; };
@@ -130,12 +130,14 @@
 		9D1FD5D11E53604200503191 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5D01E53604200503191 /* QuartzCore.framework */; };
 		9D1FD5D31E53604C00503191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5D21E53604C00503191 /* UIKit.framework */; };
 		9D1FD5D51E53605300503191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD5D41E53605300503191 /* Foundation.framework */; };
+		9D1FD5DA1E55F2F200503191 /* OCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5D91E55F2F200503191 /* OCVCell.swift */; };
+		9D1FD5DC1E55F4D600503191 /* OpenCVListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD5DB1E55F4D600503191 /* OpenCVListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D1FD4B71E53595300503191 /* OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1FD4BA1E53595300503191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D1FD4BC1E53595300503191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D1FD4BC1E53595300503191 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9D1FD4BF1E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D1FD4C11E53595300503191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1FD4C41E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -260,6 +262,8 @@
 		9D1FD5D01E53604200503191 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9D1FD5D21E53604C00503191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9D1FD5D41E53605300503191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D1FD5D91E55F2F200503191 /* OCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OCVCell.swift; path = Swift/OCVCell.swift; sourceTree = "<group>"; };
+		9D1FD5DB1E55F4D600503191 /* OpenCVListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCVListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,7 +312,9 @@
 				9D1FD4CF1E5359EF00503191 /* ObjectiveInterface */,
 				9D1FD4D01E5359EF00503191 /* Swift */,
 				9D1FD4BA1E53595300503191 /* AppDelegate.swift */,
-				9D1FD4BC1E53595300503191 /* ViewController.swift */,
+				9D1FD5D91E55F2F200503191 /* OCVCell.swift */,
+				9D1FD5DB1E55F4D600503191 /* OpenCVListDataSource.swift */,
+				9D1FD4BC1E53595300503191 /* TableViewController.swift */,
 				9D1FD4BE1E53595300503191 /* Main.storyboard */,
 				9D1FD4C11E53595300503191 /* Assets.xcassets */,
 				9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */,
@@ -353,6 +359,7 @@
 		9D1FD4D01E5359EF00503191 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				9D1FD5D61E55EE9C00503191 /* FaceSwap */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -657,6 +664,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D1FD5D61E55EE9C00503191 /* FaceSwap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FaceSwap;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -818,13 +832,14 @@
 				9D1FD59F1E535D5700503191 /* image_alignment_simple_example.cpp in Sources */,
 				9D1FD5101E535C3700503191 /* custom_colormap.cpp in Sources */,
 				9D1FD58E1E535D5700503191 /* imfill.cpp in Sources */,
+				9D1FD5DA1E55F2F200503191 /* OCVCell.swift in Sources */,
 				9D1FD5AE1E535D5700503191 /* mainwindow.cpp in Sources */,
 				9D1FD5B11E535D5700503191 /* rotm2euler.cpp in Sources */,
 				9D1FD5BF1E535D5700503191 /* warpTriangle.cpp in Sources */,
 				9D1FD5A71E535D5700503191 /* imread_examples.cpp in Sources */,
 				9D1FD5B31E535D5700503191 /* clone.cpp in Sources */,
 				9D1FD5171E535C3700503191 /* faceAverage.cpp in Sources */,
-				9D1FD4BD1E53595300503191 /* ViewController.swift in Sources */,
+				9D1FD4BD1E53595300503191 /* TableViewController.swift in Sources */,
 				9D1FD50E1E535C3700503191 /* colormap.cpp in Sources */,
 				9D1FD5271E535C3700503191 /* faceMorph.cpp in Sources */,
 				9D1FD5B91E535D5700503191 /* normal_versus_mixed_clone.cpp in Sources */,
@@ -839,6 +854,7 @@
 				9D1FD59D1E535D5700503191 /* image_alignment.cpp in Sources */,
 				9D1FD4DC1E535A3300503191 /* faceSwap.cpp in Sources */,
 				9D1FD59B1E535D5700503191 /* virtual-billboard.cpp in Sources */,
+				9D1FD5DC1E55F4D600503191 /* OpenCVListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +987,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.durgesh.OpenCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -988,6 +1005,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.durgesh.OpenCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1010,6 +1028,7 @@
 				9D1FD4CB1E53595300503191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
