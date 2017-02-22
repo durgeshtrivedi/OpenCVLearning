@@ -26,9 +26,11 @@ extension OpenCVListDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String("OCVCell")) as! OCVCell
         let item = items[indexPath.row]
-        cell.heading = item.heading
+         cell.heading = item.heading
          cell.descriptions = item.descriptions
         return cell
     }
+    
+
 
 }

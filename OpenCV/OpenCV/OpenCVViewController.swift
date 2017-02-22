@@ -8,10 +8,10 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class OpenCVViewController: UIViewController, UITableViewDelegate {
 
     
-   // @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     let dataSource: OpenCVListDataSource
     
@@ -30,12 +30,19 @@ class TableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "FaceSwap", bundle: nil)
+        let faceSwapVC = storyboard.instantiateViewController(withIdentifier: "FaceSwapViewController") as? FaceSwapViewController
+        self.present(faceSwapVC!, animated: false, completion: nil)
+    }
 
 
 }
 
 
-extension TableViewController {
+extension OpenCVViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +50,8 @@ extension TableViewController {
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.dataSource = dataSource
+        tableView.delegate = self
         tableView.reloadData()
     }
 }
+

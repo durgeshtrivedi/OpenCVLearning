@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0218311E5D8E9B00A3B55A /* FaceSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0218301E5D8E9B00A3B55A /* FaceSwapViewController.swift */; };
+		9D0218331E5D953B00A3B55A /* ImageSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0218321E5D953B00A3B55A /* ImageSwapViewController.swift */; };
 		9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BA1E53595300503191 /* AppDelegate.swift */; };
-		9D1FD4BD1E53595300503191 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BC1E53595300503191 /* TableViewController.swift */; };
-		9D1FD4C01E53595300503191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BE1E53595300503191 /* Main.storyboard */; };
+		9D1FD4BD1E53595300503191 /* OpenCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BC1E53595300503191 /* OpenCVViewController.swift */; };
+		9D1FD4C01E53595300503191 /* FaceSwap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BE1E53595300503191 /* FaceSwap.storyboard */; };
 		9D1FD4C21E53595300503191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4C11E53595300503191 /* Assets.xcassets */; };
 		9D1FD4C51E53595300503191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */; };
 		9D1FD4CE1E53599C00503191 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FD4CD1E53599C00503191 /* opencv2.framework */; };
@@ -135,22 +137,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D0218301E5D8E9B00A3B55A /* FaceSwapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceSwapViewController.swift; sourceTree = "<group>"; };
+		9D0218321E5D953B00A3B55A /* ImageSwapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSwapViewController.swift; sourceTree = "<group>"; };
 		9D1FD4B71E53595300503191 /* OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1FD4BA1E53595300503191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D1FD4BC1E53595300503191 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		9D1FD4BF1E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D1FD4BC1E53595300503191 /* OpenCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVViewController.swift; sourceTree = "<group>"; };
+		9D1FD4BF1E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FaceSwap.storyboard; sourceTree = "<group>"; };
 		9D1FD4C11E53595300503191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1FD4C41E53595300503191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1FD4C61E53595300503191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D1FD4CD1E53599C00503191 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		9D1FD4D21E535A3300503191 /* donald_trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donald_trump.jpg; sourceTree = "<group>"; };
-		9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = donald_trump.jpg.txt; sourceTree = "<group>"; };
+		9D1FD4D21E535A3300503191 /* donald_trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = donald_trump.jpg; path = ../ObjectiveInterface/FaceSwap/donald_trump.jpg; sourceTree = "<group>"; };
+		9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = donald_trump.jpg.txt; path = ../ObjectiveInterface/FaceSwap/donald_trump.jpg.txt; sourceTree = "<group>"; };
 		9D1FD4D41E535A3300503191 /* faceSwap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceSwap.cpp; sourceTree = "<group>"; };
 		9D1FD4D51E535A3300503191 /* faceSwap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = faceSwap.py; sourceTree = "<group>"; };
-		9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hillary_clinton.jpg; sourceTree = "<group>"; };
-		9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hillary_clinton.jpg.txt; sourceTree = "<group>"; };
-		9D1FD4D81E535A3300503191 /* ted_cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ted_cruz.jpg; sourceTree = "<group>"; };
-		9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ted_cruz.jpg.txt; sourceTree = "<group>"; };
+		9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hillary_clinton.jpg; path = ../ObjectiveInterface/FaceSwap/hillary_clinton.jpg; sourceTree = "<group>"; };
+		9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hillary_clinton.jpg.txt; path = ../ObjectiveInterface/FaceSwap/hillary_clinton.jpg.txt; sourceTree = "<group>"; };
+		9D1FD4D81E535A3300503191 /* ted_cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ted_cruz.jpg; path = ../ObjectiveInterface/FaceSwap/ted_cruz.jpg; sourceTree = "<group>"; };
+		9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ted_cruz.jpg.txt; path = ../ObjectiveInterface/FaceSwap/ted_cruz.jpg.txt; sourceTree = "<group>"; };
 		9D1FD4E31E535C3700503191 /* blob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blob.cpp; sourceTree = "<group>"; };
 		9D1FD4E41E535C3700503191 /* blob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blob.jpg; sourceTree = "<group>"; };
 		9D1FD4E51E535C3700503191 /* blob.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = blob.py; sourceTree = "<group>"; };
@@ -288,6 +292,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0218341E5DE22300A3B55A /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9D1FD4D21E535A3300503191 /* donald_trump.jpg */,
+				9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */,
+				9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */,
+				9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */,
+				9D1FD4D81E535A3300503191 /* ted_cruz.jpg */,
+				9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 		9D1FD4AE1E53595300503191 = {
 			isa = PBXGroup;
 			children = (
@@ -314,8 +331,8 @@
 				9D1FD4BA1E53595300503191 /* AppDelegate.swift */,
 				9D1FD5D91E55F2F200503191 /* OCVCell.swift */,
 				9D1FD5DB1E55F4D600503191 /* OpenCVListDataSource.swift */,
-				9D1FD4BC1E53595300503191 /* TableViewController.swift */,
-				9D1FD4BE1E53595300503191 /* Main.storyboard */,
+				9D1FD4BC1E53595300503191 /* OpenCVViewController.swift */,
+				9D1FD4BE1E53595300503191 /* FaceSwap.storyboard */,
 				9D1FD4C11E53595300503191 /* Assets.xcassets */,
 				9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */,
 				9D1FD4C61E53595300503191 /* Info.plist */,
@@ -367,14 +384,8 @@
 		9D1FD4D11E535A3300503191 /* FaceSwap */ = {
 			isa = PBXGroup;
 			children = (
-				9D1FD4D21E535A3300503191 /* donald_trump.jpg */,
-				9D1FD4D31E535A3300503191 /* donald_trump.jpg.txt */,
 				9D1FD4D41E535A3300503191 /* faceSwap.cpp */,
 				9D1FD4D51E535A3300503191 /* faceSwap.py */,
-				9D1FD4D61E535A3300503191 /* hillary_clinton.jpg */,
-				9D1FD4D71E535A3300503191 /* hillary_clinton.jpg.txt */,
-				9D1FD4D81E535A3300503191 /* ted_cruz.jpg */,
-				9D1FD4D91E535A3300503191 /* ted_cruz.jpg.txt */,
 			);
 			path = FaceSwap;
 			sourceTree = "<group>";
@@ -667,6 +678,9 @@
 		9D1FD5D61E55EE9C00503191 /* FaceSwap */ = {
 			isa = PBXGroup;
 			children = (
+				9D0218341E5DE22300A3B55A /* resource */,
+				9D0218301E5D8E9B00A3B55A /* FaceSwapViewController.swift */,
+				9D0218321E5D953B00A3B55A /* ImageSwapViewController.swift */,
 			);
 			name = FaceSwap;
 			sourceTree = "<group>";
@@ -808,7 +822,7 @@
 				9D1FD50D1E535C3700503191 /* blob.py in Resources */,
 				9D1FD5B21E535D5700503191 /* rotm2euler.py in Resources */,
 				9D1FD5881E535D5700503191 /* cross_valid_predictions_svm.txt in Resources */,
-				9D1FD4C01E53595300503191 /* Main.storyboard in Resources */,
+				9D1FD4C01E53595300503191 /* FaceSwap.storyboard in Resources */,
 				9D1FD5861E535D5700503191 /* cross_valid_predictions_linear.txt in Resources */,
 				9D1FD5A31E535D5700503191 /* girls.jpg in Resources */,
 				9D1FD52C1E535C3700503191 /* ted_cruz.jpg.txt in Resources */,
@@ -837,9 +851,10 @@
 				9D1FD5B11E535D5700503191 /* rotm2euler.cpp in Sources */,
 				9D1FD5BF1E535D5700503191 /* warpTriangle.cpp in Sources */,
 				9D1FD5A71E535D5700503191 /* imread_examples.cpp in Sources */,
+				9D0218331E5D953B00A3B55A /* ImageSwapViewController.swift in Sources */,
 				9D1FD5B31E535D5700503191 /* clone.cpp in Sources */,
 				9D1FD5171E535C3700503191 /* faceAverage.cpp in Sources */,
-				9D1FD4BD1E53595300503191 /* TableViewController.swift in Sources */,
+				9D1FD4BD1E53595300503191 /* OpenCVViewController.swift in Sources */,
 				9D1FD50E1E535C3700503191 /* colormap.cpp in Sources */,
 				9D1FD5271E535C3700503191 /* faceMorph.cpp in Sources */,
 				9D1FD5B91E535D5700503191 /* normal_versus_mixed_clone.cpp in Sources */,
@@ -848,6 +863,7 @@
 				9D1FD5131E535C3700503191 /* delaunay.cpp in Sources */,
 				9D1FD58C1E535D5700503191 /* frame_rate.cpp in Sources */,
 				9D1FD5AD1E535D5700503191 /* main.cpp in Sources */,
+				9D0218311E5D8E9B00A3B55A /* FaceSwapViewController.swift in Sources */,
 				9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */,
 				9D1FD5BB1E535D5700503191 /* threshold.cpp in Sources */,
 				9D1FD5971E535D5700503191 /* perspective-correction.cpp in Sources */,
@@ -861,12 +877,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9D1FD4BE1E53595300503191 /* Main.storyboard */ = {
+		9D1FD4BE1E53595300503191 /* FaceSwap.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9D1FD4BF1E53595300503191 /* Base */,
 			);
-			name = Main.storyboard;
+			name = FaceSwap.storyboard;
 			sourceTree = "<group>";
 		};
 		9D1FD4C31E53595300503191 /* LaunchScreen.storyboard */ = {
