@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageSwapViewController : UIPageViewController {
+class PageViewController : UIPageViewController {
 
     @IBOutlet weak var imageName: UILabel!
     @IBOutlet weak var imageView: UIImageView!

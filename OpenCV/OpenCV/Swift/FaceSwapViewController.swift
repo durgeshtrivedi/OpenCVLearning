@@ -21,7 +21,7 @@ enum FileName {
 
 class FaceSwapViewController : UIViewController, UIPageViewControllerDataSource {
     
-    var pageViewController: ImageSwapViewController?
+    var pageViewController: PageViewController?
     var pageImages: [UIImage]?
     var pageTitles: [String]?
     var imageFiletexts: [String]?
@@ -34,10 +34,11 @@ class FaceSwapViewController : UIViewController, UIPageViewControllerDataSource 
         
         // Create page view controller
         
-        pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ImageSwapViewController") as? ImageSwapViewController
+        pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? PageViewController
         pageViewController?.dataSource = self
         
-        let viewControllers:[ImageSwapViewController] = [self.viewControllerAtIndex(index: 0)!]
+        let vc = self.viewControllerAtIndex(index: 0)
+        let viewControllers:[ImageContentViewController] = [vc!]
         
         pageViewController?.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
@@ -65,10 +66,11 @@ class FaceSwapViewController : UIViewController, UIPageViewControllerDataSource 
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        guard var  index = (viewController as? ImageSwapViewController)?.pageIndex, index == 0 else {
+         var  index = (viewController as? ImageContentViewController)?.pageIndex ?? 0
+          if index == 0 {
             return nil
-        }
-        index -= 1
+         }
+         index -= 1
         
         return self.viewControllerAtIndex(index: index)
     }
@@ -77,15 +79,15 @@ class FaceSwapViewController : UIViewController, UIPageViewControllerDataSource 
         return nil
     }
     
-    func viewControllerAtIndex(index: Int8) -> ImageSwapViewController? {
+    func viewControllerAtIndex(index: Int8) -> ImageContentViewController? {
         
         let newIndex = Int(index)
-        if (self.pageImages?.count)! == 0 || newIndex >= 0 {
+        if (self.pageImages?.count)! == 0 || newIndex >= (self.pageImages?.count)!  {
             return nil;
         }
         
         let storyboard = UIStoryboard(name: "FaceSwap", bundle: nil)
-        let imageSwapViewController = storyboard.instantiateViewController(withIdentifier: "ImageSwapViewController") as?  (ImageSwapViewController)
+        let imageSwapViewController = storyboard.instantiateViewController(withIdentifier: "ImageContentViewController") as?  (ImageContentViewController)
         
         imageSwapViewController?.imageView?.image = self.pageImages?[newIndex]
         imageSwapViewController?.pagetitle = self.pageTitles?[newIndex]

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9D0218311E5D8E9B00A3B55A /* FaceSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0218301E5D8E9B00A3B55A /* FaceSwapViewController.swift */; };
-		9D0218331E5D953B00A3B55A /* ImageSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0218321E5D953B00A3B55A /* ImageSwapViewController.swift */; };
+		9D0218331E5D953B00A3B55A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0218321E5D953B00A3B55A /* PageViewController.swift */; };
+		9D0218361E671C3E00A3B55A /* ImageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0218351E671C3E00A3B55A /* ImageContentViewController.swift */; };
 		9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BA1E53595300503191 /* AppDelegate.swift */; };
 		9D1FD4BD1E53595300503191 /* OpenCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BC1E53595300503191 /* OpenCVViewController.swift */; };
 		9D1FD4C01E53595300503191 /* FaceSwap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1FD4BE1E53595300503191 /* FaceSwap.storyboard */; };
@@ -138,7 +139,8 @@
 
 /* Begin PBXFileReference section */
 		9D0218301E5D8E9B00A3B55A /* FaceSwapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceSwapViewController.swift; sourceTree = "<group>"; };
-		9D0218321E5D953B00A3B55A /* ImageSwapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSwapViewController.swift; sourceTree = "<group>"; };
+		9D0218321E5D953B00A3B55A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		9D0218351E671C3E00A3B55A /* ImageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContentViewController.swift; sourceTree = "<group>"; };
 		9D1FD4B71E53595300503191 /* OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1FD4BA1E53595300503191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1FD4BC1E53595300503191 /* OpenCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVViewController.swift; sourceTree = "<group>"; };
@@ -680,7 +682,8 @@
 			children = (
 				9D0218341E5DE22300A3B55A /* resource */,
 				9D0218301E5D8E9B00A3B55A /* FaceSwapViewController.swift */,
-				9D0218321E5D953B00A3B55A /* ImageSwapViewController.swift */,
+				9D0218321E5D953B00A3B55A /* PageViewController.swift */,
+				9D0218351E671C3E00A3B55A /* ImageContentViewController.swift */,
 			);
 			name = FaceSwap;
 			sourceTree = "<group>";
@@ -851,7 +854,7 @@
 				9D1FD5B11E535D5700503191 /* rotm2euler.cpp in Sources */,
 				9D1FD5BF1E535D5700503191 /* warpTriangle.cpp in Sources */,
 				9D1FD5A71E535D5700503191 /* imread_examples.cpp in Sources */,
-				9D0218331E5D953B00A3B55A /* ImageSwapViewController.swift in Sources */,
+				9D0218331E5D953B00A3B55A /* PageViewController.swift in Sources */,
 				9D1FD5B31E535D5700503191 /* clone.cpp in Sources */,
 				9D1FD5171E535C3700503191 /* faceAverage.cpp in Sources */,
 				9D1FD4BD1E53595300503191 /* OpenCVViewController.swift in Sources */,
@@ -866,6 +869,7 @@
 				9D0218311E5D8E9B00A3B55A /* FaceSwapViewController.swift in Sources */,
 				9D1FD4BB1E53595300503191 /* AppDelegate.swift in Sources */,
 				9D1FD5BB1E535D5700503191 /* threshold.cpp in Sources */,
+				9D0218361E671C3E00A3B55A /* ImageContentViewController.swift in Sources */,
 				9D1FD5971E535D5700503191 /* perspective-correction.cpp in Sources */,
 				9D1FD59D1E535D5700503191 /* image_alignment.cpp in Sources */,
 				9D1FD4DC1E535A3300503191 /* faceSwap.cpp in Sources */,
